@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: hsl(217deg, 54%, 11%);
+  width: 100%;
+  height: 100vh;
+}
+
+#main_background {
+  height: 96vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#main_background #main_card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 585px;
+  background-color: hsl(216deg, 50%, 16%);
+  border-radius: 3%;
+  box-shadow: 0px 0px 50px black;
+}
+#main_background #main_card #card_image {
+  width: 300px;
+  height: 300px;
+  margin: 2rem;
+  align-self: center;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/image-equilibrium.jpg);
+  background-size: cover;
+}
+#main_background #main_card #card_image #card_image_icon {
+  display: none;
+}
+#main_background #main_card #card_image:hover {
+  cursor: pointer;
+  background: rgba(0, 255, 248, 0.5) url("../images/image-equilibrium.jpg");
+  background-blend-mode: overlay;
+  background-size: cover;
+  transition: all 0.3s;
+}
+#main_background #main_card #card_image:hover #card_image_icon {
+  display: inline-block;
+}
+#main_background #main_card #card_first_content {
+  margin: 1rem 2.5rem;
+  font-size: 2rem;
+}
+#main_background #main_card #card_first_content #first_p {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 600;
+}
+#main_background #main_card #card_first_content #first_p:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+#main_background #main_card #card_first_content #second_p {
+  font-size: 1.8rem;
+  color: hsl(215deg, 51%, 70%);
+  font-weight: 300;
+}
+#main_background #main_card #card_second_content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 2.5rem;
+  font-size: 2rem;
+}
+#main_background #main_card #card_second_content .logos {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+#main_background #main_card #card_second_content #third_p {
+  color: hsl(178deg, 100%, 50%);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+#main_background #main_card #card_second_content #fourth_p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: hsl(215deg, 51%, 70%);
+}
+#main_background #main_card #card_footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid hsl(0deg, 0%, 70%);
+}
+#main_background #main_card #card_footer img {
+  width: 35px;
+  border-radius: 50%;
+  border: 1px solid hsl(0deg, 0%, 100%);
+}
+#main_background #main_card #card_footer #first_span {
+  color: hsl(215deg, 51%, 70%);
+  margin-left: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+#main_background #main_card #card_footer #second_span {
+  color: hsl(0deg, 0%, 100%);
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+#main_background #main_card #card_footer #second_span:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.attribution a {
+  color: hsl(0deg, 0%, 100%);
+}
+
+/*# sourceMappingURL=style.css.map */
